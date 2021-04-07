@@ -1,0 +1,24 @@
+
+---create user
+CREATE USER 'anil' IDENTIFIED BY 'anil';  
+
+select user from mysql.user;
+
+--- select user in command prompt
+	mysql -u anil -p
+	and provide the password
+-- crete the database
+	create database empdb;
+	show databases;
+	use emppdb;
+
+--- Create Employee table
+
+create table employee(
+   id bigint(20) NOT NULL,
+   name VARCHAR(100) NOT NULL,
+   salary bigint(20),
+   role VARCHAR(100),
+   email VARCHAR(100),
+   PRIMARY KEY ( id )
+);
